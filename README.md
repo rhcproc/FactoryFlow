@@ -4,6 +4,9 @@ FactoryFlow v0.1 is a C++20 industrial conveyor control simulator demonstrating
 PLC-style cyclic control. This milestone contains only a controller, a virtual
 plant, a console application, and automated tests. No external libraries are required.
 
+For the equivalent PLC implementation, read [the PLC mapping guide](docs/plc-mapping.md)
+and [the commented Structured Text source](plc/FactoryFlow.st).
+
 ## Build and run
 
 Requires a C++20 compiler and CMake 3.20 or newer.
