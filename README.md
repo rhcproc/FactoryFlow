@@ -10,6 +10,9 @@ and [the commented Structured Text source](plc/FactoryFlow.st).
 The [minimal FastAPI gateway](gateway/README.md) exposes status/start/stop/reset
 over REST, forwarding requests to the C++ application's optional TCP service mode.
 
+The [Next.js operator HMI](frontend/README.md) displays live telemetry and sends
+START, STOP, and RESET through that gateway.
+
 ## Build and run
 
 Requires a C++20 compiler and CMake 3.20 or newer.

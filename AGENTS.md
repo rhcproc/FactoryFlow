@@ -1,6 +1,7 @@
 # FactoryFlow development
 
-- Keep this milestone limited to the controller, simulator, PLC mapping, minimal TCP/FastAPI gateway, and tests.
+- Keep this milestone limited to the controller, simulator, PLC mapping, TCP/FastAPI gateway, Next.js HMI, and tests.
+- The frontend displays GET /api/status telemetry only and forwards commands; it must not simulate or control plant behavior locally.
 - The controller reads Inputs and returns Outputs. It must not depend on or mutate the plant.
 - Keep control logic in src/Controller.hpp and src/Controller.cpp; transport belongs in src/TcpServer.*.
 - FastAPI only forwards requests. C++ owns commands, plant state, and control decisions.

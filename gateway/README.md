@@ -4,7 +4,7 @@
 HMI -> REST -> FastAPI -> TCP -> C++ Controller + Plant Simulator
 ```
 
-The HMI is an external caller, not a UI included in this milestone. FastAPI only
+The [Next.js HMI](../frontend/README.md) is the operator-facing caller. FastAPI only
 translates HTTP requests to TCP messages and returns the C++ response. It contains
 no sensor simulation, conveyor rules, state transitions, or fault decisions.
 C++ remains the owner of the machine state and runs its approximately 10 ms cycle
