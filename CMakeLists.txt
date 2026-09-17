@@ -6,7 +6,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
 find_package(Threads REQUIRED)
-add_executable(factoryflow src/main.cpp src/Controller.cpp)
+add_executable(factoryflow src/main.cpp src/Controller.cpp src/TcpServer.cpp)
 target_link_libraries(factoryflow PRIVATE Threads::Threads)
 
 include(CTest)
