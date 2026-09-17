@@ -7,6 +7,9 @@ plant, a console application, and automated tests. No external libraries are req
 For the equivalent PLC implementation, read [the PLC mapping guide](docs/plc-mapping.md)
 and [the commented Structured Text source](plc/FactoryFlow.st).
 
+The [minimal FastAPI gateway](gateway/README.md) exposes status/start/stop/reset
+over REST, forwarding requests to the C++ application's optional TCP service mode.
+
 ## Build and run
 
 Requires a C++20 compiler and CMake 3.20 or newer.
